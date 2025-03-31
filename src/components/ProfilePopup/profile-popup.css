@@ -1,0 +1,26 @@
+.profile-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profile-popup__logo {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: red;
+}
+
+.profile-popup__logo:hover {
+    cursor: pointer;
+}
+
+.profile-popup__list {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+}

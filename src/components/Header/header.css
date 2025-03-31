@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 2px lightgray;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation__item {
+    color: black;
+}

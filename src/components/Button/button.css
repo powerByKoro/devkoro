@@ -1,0 +1,17 @@
+.button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: unset;
+    box-shadow: 0 2px 5px pink;
+}
+
+.button:not(.button_active):hover {
+    cursor: pointer;
+    background-color: #fef7ff;
+}
+
+.button_active {
+    border-bottom: 2px solid blue;
+}
