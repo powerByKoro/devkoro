@@ -21,3 +21,7 @@
 .navigation__item {
     color: black;
 }
+
+.logo {
+    cursor: pointer;
+}

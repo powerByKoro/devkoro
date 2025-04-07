@@ -1,11 +1,9 @@
 .sidebar {
-    position: absolute;
-    top: 68px;
-    left: 0;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 68px);
+    height: calc(100vh - 68px);
     width: 200px;
+    min-width: 200px;
     box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
 
     background: linear-gradient(
@@ -39,6 +37,7 @@
 
 .sidebar_collapsed {
     width: min-content;
+    min-width: min-content;
 }
 
 .sidebar.sidebar_collapsed .sidebar__item {

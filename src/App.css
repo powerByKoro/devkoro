@@ -1,3 +1,8 @@
 .App {
     text-align: center;
 }
+
+.main-layout {
+    display: flex;
+    gap: 10px;
+}
