@@ -6,20 +6,19 @@ const Products = () => {
   const {
     data: products = [],
     isLoading,
-    isFetching, // Добавляем isFetching
     error,
-  } = useGetProductsQuery();
+  } = useGetProductsQuery(undefined, {
+    refetchOnMountOrArgChange: 5, // Перезагружать при каждом монтировании, но по прошедствии 5 секунд
+  });
 
   if (error) return <div>Error: {error.message}</div>;
 
   // Объединяем состояния загрузки
-  const showSkeletons = isLoading || isFetching;
-
   return (
     <div className="home-page">
       <h1>Страница продуктов</h1>
       <div className="products">
-        {showSkeletons
+        {isLoading
           ? Array.from({ length: 3 }).map((_, index) => (
               <Product key={`skeleton-${index}`} isLoading={true} />
             ))
