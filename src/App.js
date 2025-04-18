@@ -7,11 +7,13 @@ import { default as Projects } from "./pages/projects/Index";
 import { default as Settings } from "./pages/settings/Index";
 import { default as Milestones } from "./pages/milestones/Index";
 import { default as Tasks } from "./pages/tasks/Index";
+import { default as Login } from "./pages/login/Index";
 
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
 
 import "./App.css";
+import Products from "./pages/products/Index";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/settings" element={<Settings />} />
             <Route path="/milestones" element={<Milestones />} />
             <Route path="/tasks" element={<Tasks />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/products" element={<Products />} />
           </Routes>
         </div>
       </div>
