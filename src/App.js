@@ -8,6 +8,7 @@ import { default as Settings } from "./pages/settings/Index";
 import { default as Milestones } from "./pages/milestones/Index";
 import { default as Tasks } from "./pages/tasks/Index";
 import { default as Login } from "./pages/login/Index";
+import { default as Diff } from "./pages/diffs/Index";
 
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/tasks" element={<Tasks />} />
             <Route path="/login" element={<Login />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/diff" element={<Diff />} />
           </Routes>
         </div>
       </div>

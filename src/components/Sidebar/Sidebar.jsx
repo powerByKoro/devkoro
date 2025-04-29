@@ -47,6 +47,10 @@ const Sidebar = () => {
           <FaCog />
           {!isSidebarCollapsed && <div>Продукты</div>}
         </div>
+        <div onClick={() => navigate("/diff")} className="sidebar__item">
+          <FaCog />
+          {!isSidebarCollapsed && <div>Различия</div>}
+        </div>
       </div>
     </div>
   );
